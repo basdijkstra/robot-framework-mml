@@ -24,4 +24,4 @@ Check that a valid HTTP call yields status 200 and the expected todo title
     ${response}=    GET On Session  zip  /us/90210
     Status Should Be  200  ${response}
     ${country}=  Get From Dictionary  ${response.json()}  country
-    Should Be Equal  ${country}  Canada
+    Should Be Equal  ${country}  United States
